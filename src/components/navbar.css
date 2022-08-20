@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: rgba(159, 216, 255, 0.2);
+  box-shadow: 0 0px 12px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+  position: fixed;
+  margin: 4px;
+}
+
+.navbar__details {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  justify-content: center;
+}
+
+.navbar__items {
+  margin-left: 30%;
+}
+.navbar__item {
+  font-size: 20px;
+  font-family: "poppins";
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+.navbar__item:hover {
+  color: #939393;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background: black;
+  }
+}
